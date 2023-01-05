@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+
+main{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    
+
+}
+.tarjeta2{
+    background: rgb(5,86,122);
+    background: linear-gradient(180deg, rgba(5,86,122,1) 14%, rgba(17,22,59,1) 84%); 
+    width: 17rem;
+    height: 40rem;
+    margin-top: 3rem;
+  
+    border-radius: 1.5rem;
+    color: white;
+    box-shadow: 0 1px 5px 2px rgb(39, 39, 118) ;
+}
+
+.tarjeta1{
+    background: rgb(5,86,122);
+    background: linear-gradient(180deg, rgba(5,86,122,1) 14%, rgba(17,22,59,1) 84%); 
+    width: 17rem;
+    height: 40rem;
+    margin-top: 3rem;
+    border-radius: 1.5rem;
+    color: white;
+    box-shadow: 0 1px 5px 2px rgb(39, 39, 118) ;
+    
+
+
+}
+
+.capa1{
+    
+    background:linear-gradient(180deg, rgba(15,179,255,1) 14%, rgba(34,59,255,1) 84%);
+    width: 16rem;
+    margin: 0 auto;
+    height: 29rem;
+    position: relative;
+    top: .4rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+    box-shadow: 0 4px 3px 1px rgb(41, 41, 145) ;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.capa2{
+    background:linear-gradient(180deg, rgba(15,179,255,1) 14%, rgba(34,59,255,1) 84%);
+    width: 16rem;
+    margin: 0 auto;
+    height: 12rem;
+    position: relative;
+    top: .4rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+    box-shadow: 0 4px 3px 1px rgb(41, 41, 145) ;
+    display: flex;
+    flex-direction: column;
+
+}
+.main_tarjeta1{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 2rem;
+
+}
+.lugar{
+    display: flex;
+    align-items: center;
+}
+.icono_clima{
+    display: flex;
+    width: 100%;
+    height: 14rem;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/nubeDorada.png);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    margin-top: 3rem;
+}
+
+.temperatura{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.temperatura2{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    font-family:'Courier New', Courier, monospace;
+}
+.grados2{
+    font-size: 4rem;
+    display: flex;
+    align-items: flex-end;
+}
+.gradosSpan{
+    font-size: 2rem;
+}
+.grados{
+    font-size: 7rem;
+
+
+}
+
+.icono_clima2{
+    background-image: url(img/nubeDorada.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;;
+    width: 5rem;
+
+}
+
+.main_tarjeta2{
+    display: flex;
+
+    height: 8rem;
+}
+.estado{
+    font-size: 2rem;
+    margin-top:-2rem;
+    
+}
+.clima_hoy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 1rem;
+    margin-top: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.clima_dia{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.clima_horario_tarjeta{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.clima_horario_tarjeta2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3.2rem;
+
+}
+.svg{
+    filter: invert(100%);
+}
+.hamburguer{
+    cursor: pointer;
+}
+
+.vertical_dots{
+    cursor: pointer;
+}
+.hamburguer:active{
+    filter: invert(40%);
+    
+}
+
+.vertical_dots{
+    cursor: pointer;
+}
+.vertical_dots:active{
+    filter: invert(40%);
+}
+
+.config{
+list-style: none;
+background-color: aliceblue;
+color: black;
+height: 4rem;
+display: flex;
+justify-content: space-around;
+align-items: right;
+border-radius: 1rem;
+position: absolute;
+top: 3rem;
+right: 1rem;
+width: 8rem;
+flex-direction: column;
+display: none;
+
+
+}
+.config_list{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: flex-end;
+    height: 2rem;
+    padding: 1rem;
+    
+}
+/* SIDEBAR */
+
+.sidebar{
+    width: 13.5rem;
+    height: 28rem;
+    background:linear-gradient(180deg, rgba(15,179,255,1) 14%, rgba(34,59,255,1) 84%);
+    position:absolute;
+    right: 2.5rem;
+    bottom: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    border: 8px solid rgb(76, 76, 114);
+    display: none;
+
+
+    
+
+}
+
+.usuario{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    align-items:flex-end;
+    justify-content: space-evenly;
+    height: 10rem;
+    margin: 0;
+    padding: 1rem;
+
+
+}
+.usuario_perfil{
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(248, 250, 250);
+    border-radius: 50%;
+    background-image:url(img/bxs-user.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    filter: invert(80%);
+    
+}
+
+.ubicacion{
+    height: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.ubicacion_input{
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 2rem;
+    height: 2rem;
+    width: 11rem;
+    padding-left: 1rem;
+    
+
+}
